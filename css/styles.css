@@ -106,6 +106,8 @@ color: var(--background-button-color);
 }
 .auth-nav .link {
      display: block;
+     display: flex;
+     align-items: center;
      padding-top: 32px;
      padding-bottom: 32px;
   
@@ -218,6 +220,28 @@ margin-bottom: 10px;
 font-weight: normal;
 font-size: 14px;
 line-height: 1.7;}
+
+.thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    height: 92px;
+    background: #F5F4FA;
+border-radius: 4px;
+}
+
+.picture {
+    width: 70px;
+    height: 70px;
+    fill: var(--primary-text-color);
+}
+
+.picture:hover {
+    fill: #2196F3;
+}
 
 /* advantages */
 
@@ -383,24 +407,7 @@ letter-spacing: 0.03em;
     margin-right: 30px;
 }
  
-.thumb {
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 30px;
-    padding: 25px 100px;
-    background: #F5F4FA;
-border-radius: 4px;
-}
 
-.picture {
-    width: 70px;
-    height: 70px;
-    fill: var(--primary-text-color);
-}
-
-.picture:hover {
-    fill: #2196F3;
-}
 
 /* Portfolio */
 
@@ -474,9 +481,10 @@ text-align: center;
 }
 
 .works .title {
+    display: block;
     margin: 0px;
     padding: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
    font-weight: bold;
 font-size: 18px;
 line-height: 2;
@@ -511,8 +519,8 @@ line-height: 1.9;
     text-decoration: none;
 }
 
-.works .item:hover {
-border: solid 1px #eeeeee;
+.work-link:hover {
+
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
